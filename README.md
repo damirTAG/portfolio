@@ -1,2 +1,2 @@
-# portfolio
-My Web Developer Portfolio, status - in progress
+# damirTAG's Web Developer Portfolio
+
