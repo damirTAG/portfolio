@@ -1,0 +1,398 @@
+/*
+stylesheet for damir's website
+https://github.com/damirtag/portfolio
+*/
+/*settings start*/
+//k2d font
+@import url("https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+//k2d end font
+//Ysabeau Infant font
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+//Ysabeau Infant enf font
+$bg-c: #1e1f22;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    background-color: $bg-c;
+    color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+*,
+:after,
+:before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246/0.5);
+    --tw-ring-offset-shadow: 0 0 transparent;
+    --tw-ring-shadow: 0 0 transparent;
+    --tw-shadow: 0 0 transparent;
+    --tw-shadow-colored: 0 0 transparent;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+blockquote,
+big,
+center,
+canvas,
+caption,
+cite,
+code,
+command,
+datalist,
+dd,
+del,
+details,
+dfn,
+dl,
+div,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+keygen,
+label,
+legend,
+li,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+s,
+samp,
+section,
+small,
+span,
+source,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+tfoot,
+thead,
+th,
+tr,
+tdvideo,
+tt,
+u,
+ul,
+var {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.container {
+    width: 800px;
+
+    margin: 0px auto;
+}
+/*settings end*/
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    font-family: Ysabeau Infant, sans-serif !important;
+    font-weight: bold;
+    background-color: #313338;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+//header
+.header {
+    margin-top: 20px;
+    .head-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .links {
+        margin-left: 5px;
+        a {
+            color: #ffffff;
+        }
+    }
+}
+.header-inner {
+    .rus {
+        font-family: Ysabeau Infant, sans-serif !important;
+    }
+    h1 {
+        font-family: Ysabeau Infant, sans-serif !important;
+        font-size: 25px;
+    }
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    background-color: #313338;
+}
+//status
+.status-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .tg-box {
+        background-color: #191c21;
+        padding: 15px;
+        border-radius: 20px;
+        margin-top: 8px;
+        display: flex;
+    }
+    .tg-info {
+        img {
+            border-radius: 2px;
+        }
+        h1 {
+            font-size: 19px;
+        }
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        .name {
+            margin-bottom: 3px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .phone {
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            font-weight: 200;
+            margin-bottom: 3px;
+        }
+        .nametag {
+            a {
+                color: #666d77;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+//techs
+.techs {
+    margin-top: 30px;
+    .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+    .font-bold {
+        font-weight: 700;
+    }
+    .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .right-5 {
+        right: 1.25rem;
+    }
+    .bottom-5 {
+        bottom: 1.25rem;
+    }
+    .absolute {
+        position: absolute;
+    }
+    .heading-text {
+        text-shadow: #1e1f22 -2px 2px 0, #1e1f22 -4px 3px 0;
+    }
+}
+@media (min-width: 1024px) {
+    .lg\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.p-5 {
+    padding: 1.25rem;
+}
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.w-full {
+    width: 100%;
+}
+.grid {
+    display: grid;
+}
+.shadow-green-800\/20 {
+    --tw-shadow-color: rgba(22, 101, 52, 0.479);
+    --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-xl {
+    --tw-shadow: 0 20px 25px -5px rgb(0 0 0/0.1), 0 8px 10px -6px rgb(0 0 0/0.1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+}
+.to-green-800 {
+    --tw-gradient-to: #20b65a;
+}
+.from-emerald-600 {
+    --tw-gradient-from: #059669;
+    --tw-gradient-to: rgb(5 150 105/0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.bg-gradient-to-bl {
+    background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+.w-24 {
+    width: 6rem;
+}
+.h-24 {
+    height: 6rem;
+}
+.ml-auto {
+    margin-left: auto;
+}
+.w-6 {
+    width: 1.5rem;
+}
+
+.h-6 {
+    height: 1.5rem;
+}
+.duration-200 {
+    transition-duration: 0.2s;
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.15s;
+}
+.px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.p-2 {
+    padding: 0.5rem;
+}
+.bg-\[\#080808\] {
+    --tw-bg-opacity: 1;
+    background-color: #191c21;
+}
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.to-gray {
+    --tw-gradient-from: #adab27 !important;
+    --tw-gradient-to: rgb(5 150 105/0) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+//portfolio
+.portfolio {
+    background-color: #313338;
+    border-radius: 20px;
+    padding: 20px;
+}
+.footer {
+    width: 800px;
+    margin: 0 auto;
+    font-family: Ysabeau Infant, sans-serif !important;
+    font-weight: bold;
+    background-color: #313338;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}

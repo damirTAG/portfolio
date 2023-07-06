@@ -1,0 +1,26 @@
+@media only screen and (max-width: 823px) {
+    .container {
+        width: auto;
+        margin: 0 10px;
+    }
+    .wrapper {
+        width: auto;
+        margin: 10px 10px;
+    }
+    .telegram {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .linkcord {
+        iframe {
+            width: 100%;
+        }
+    }
+    .header-inner {
+        flex-wrap: wrap;
+    }
+    .footer {
+        width: auto;
+        margin: 10px 10px;
+    }
+}
