@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="header-inner">
                     <div class="head-links">
-                        <h1 class="rus">Я — Веб Разработчик</h1>
+                        <h1 class="rus lang" key="me">Я — Веб Разработчик</h1>
                         <div class="links">
                             <a href="https://github.com/damirtag" target="_blank"
                                 ><ion-icon name="logo-github" style="font-size: 30px"></ion-icon
@@ -27,7 +27,7 @@
                             ></a>
                         </div>
                     </div>
-                    <h1>Разработаю для Вас сайт</h1>
+                    <h1 class="lang" key="devfor">Разработаю для Вас сайт</h1>
                 </div>
             </div>
         </header>
@@ -35,7 +35,7 @@
             <div class="status">
                 <div class="status-inner">
                     <div class="vscode-status">
-                        <h1>Статус разработки</h1>
+                        <h1 class="status lang" key="status">Статус разработки</h1>
                         <div class="linkcord" style="width: auto">
                             <iframe
                                 src="https://linkcord.js.org/api/v3/widget/857008895935512598?type=vsc&theme=dark"
@@ -79,7 +79,7 @@
                     <div
                         class="ml-auto w-24 h-24 rounded-lg shadow-xl shadow-green-800/20 bg-gradient-to-bl from-emerald-600 to-green-800"
                     ></div>
-                    <h1 class="heading-text absolute bottom-5 right-5 text-3xl text-white font-bold text-center">
+                    <h1 class="lang heading-text absolute bottom-5 right-5 text-3xl text-white font-bold text-center" key="techs">
                         Технологии которые я использую
                     </h1>
                 </div>
@@ -155,8 +155,9 @@
                             style="margin-left: 0"
                         ></div>
                         <h1
-                            class="heading-text absolute bottom-5 right-5 text-3xl text-white font-bold text-center"
+                            class="lang design heading-text absolute bottom-5 right-5 text-3xl text-white font-bold text-center"
                             style="left: 0; right: auto"
+                            key="design"
                         >
                             Дизайн
                         </h1>
@@ -187,13 +188,18 @@
             <!-- portfolio end -->
         </div>
         <div class="footer">
-            <h1>Ваш IP Adress: <span id="gfg"></span></h1>
+            <h1 class="ipadress">Your IP Adress: <span id="gfg"></span></h1>
+            <div class="tr-lang">
+                <img src="./assets/ru.svg" class="translate mrgn-r" id="en-gb" width="30px" height="30px" />
+                <img src="./assets/us.svg" class="translate" id="zh-tw" width="30px" height="30px" />
+                <img src="" alt="" />
+            </div>
         </div>
         <!-- scripts and cdn -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
         <script src="./engine/App.js"></script>
     </body>
 </html>

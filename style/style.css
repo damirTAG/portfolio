@@ -193,6 +193,12 @@ var {
 .header .links a {
   color: #ffffff;
 }
+.header .tr-lang {
+  display: flex;
+}
+.header .tr-lang .mrgn-r {
+  margin-right: 10px;
+}
 
 .header-inner {
   border-radius: 20px;
@@ -405,6 +411,8 @@ var {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   width: 800px;
   margin: 0 auto;
   font-family: Ysabeau Infant, sans-serif !important;

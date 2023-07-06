@@ -194,6 +194,13 @@ var {
             color: #ffffff;
         }
     }
+    .tr-lang {
+        display: flex;
+
+        .mrgn-r {
+            margin-right: 10px;
+        }
+    }
 }
 .header-inner {
     .rus {
@@ -387,6 +394,8 @@ var {
     padding: 20px;
 }
 .footer {
+    display: flex;
+    justify-content: space-between;
     width: 800px;
     margin: 0 auto;
     font-family: Ysabeau Infant, sans-serif !important;
