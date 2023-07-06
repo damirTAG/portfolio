@@ -8,3 +8,7 @@ $.getJSON("https://api.ipify.org?format=json", function (data) {
     // Setting text of element P with id gfg
     $("#gfg").html(data.ip);
 });
+
+let author = "DAMIRTAG'S PORTFOLIO, ";
+let github = "GITHUB REPO: HTTPS://GITHUB.COM/DAMIRTAG/PORTFOLIO";
+console.log(author + github);
