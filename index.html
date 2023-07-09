@@ -3,43 +3,83 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="Разработка сайтов на заказ" />
+        <meta name="description" content="Меня зовут Дамир и я веб-разработчик." />
+        <!-- tailwind -->
+        <link rel="stylesheet" href="./style/output.css" />
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
         <!--styles-->
         <link rel="stylesheet" href="./style/style.css" />
         <link rel="stylesheet" href="./adaptive/style.css" />
         <!--styles end-->
         <title>damirTAG - Web Developer</title>
     </head>
-    <body>
+    <body class="">
         <div id="loader" class="race-by center"></div>
-        <header class="header">
+        <header class="w-full header">
             <div class="container">
                 <div class="header-inner">
                     <div class="head-links">
-                        <h1 class="rus lang" key="me">Я — Веб Разработчик</h1>
-                        <div class="links">
+                        <h1 class="text-3xl text-white font-bold rus lang" key="me">Я — Веб Разработчик</h1>
+                        <div class="links flex">
                             <a href="https://github.com/damirtag" target="_blank"
-                                ><ion-icon name="logo-github" style="font-size: 30px"></ion-icon
+                                ><ion-icon class="text-3xl" name="logo-github"></ion-icon
                             ></a>
                             <a href="https://t.me/damirtag" target="_blank"
                                 ><img src="./assets/telegram-svgrepo-com (1).svg" width="30px" height="30px" alt=""
                             /></a>
-                            <a href="wa.me/+77755788623" target="_blank"
-                                ><ion-icon name="logo-whatsapp" style="font-size: 30px"></ion-icon
+                            <a href="https://api.whatsapp.com/send/?phone=77755788623&text&type=phone_number&app_absent=0 " target="_blank"
+                                ><ion-icon class="text-3xl" name="logo-whatsapp"></ion-icon
                             ></a>
                         </div>
                     </div>
-                    <h1 class="lang" key="devfor">Разработаю для Вас сайт</h1>
+                    <h1 class="text-3xl text-white font-bold lang" key="devfor">Разработаю сайт для Вас</h1>
                 </div>
             </div>
         </header>
-        <div class="wrapper">
+        <!-- about -->
+        <div class="min-[821px]:mx-10 wrapper" id="wrapper">
+            <div class="flex flex-wrap about-in">
+                <div class="relative w-full" style="position: relative">
+                    <div class="mr-auto w-24 h-24 rounded-lg shadow-xl shadow-red-800/20 bg-gradient-to-bl from-red-600 to-red-800"></div>
+                    <h1
+                        class="lang heading-text absolute bottom-5 left-5 text-3xl text-white font-bold text-left"
+                        style="text-shadow: #1e1f22 -2px 2px 0, #1e1f22 -4px 3px 0"
+                    >
+                        Обо мне
+                    </h1>
+                    <div class="absolute right-5 scrollto bottom-2">
+                        <a onclick="slowScroll()" href="#portfolio">
+                            <div
+                                class="absolute bottom-[100%] right-1 scrollto-text text-[23px] font-thin"
+                                style="font-family: K2D, sans-serif"
+                            >
+                                scroll
+                            </div>
+                            <img class="w-14 h-14" src="./assets/reshot-icon-down-arrow-VUE5WQFCX2.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="text">
+                    <p class="text-[19px]">
+                        Меня зовут Дамир, мне 17 лет, живу в Алмате. Занимаюсь разработкой сайтов уже 2 года. Параллельно изучаю дизайн и
+                        маркетинг. Помогу вам начиная от создания продаваемых лендингов с адаптации под все экраны, заканчивая
+                        многостраничными сайтами с CMS-кой и админ панелью.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper" id="wrapper">
             <div class="status">
-                <div class="status-inner">
+                <div class="flex md:max-2xl:flex flex-row min-[821px]:flex-row max-[1536px]:flex-col status-inner">
                     <div class="vscode-status">
                         <h1 class="status lang" key="status">Статус разработки</h1>
                         <div class="linkcord" style="width: auto">
                             <iframe
                                 src="https://linkcord.js.org/api/v3/widget/857008895935512598?type=vsc&theme=dark"
+                                title="linkcord-vscode"
                                 width="500"
                                 height="100"
                                 allowtransparency="true"
@@ -52,13 +92,14 @@
                     <div class="telegram">
                         <h1 style="font-family: K2D, sans-serif">Telegram</h1>
                         <div class="tg-box">
-                            <img
-                                src="https://media.discordapp.net/attachments/1114539269722222652/1126563559069982851/image.png?width=671&height=671"
-                                alt="telegram-pic"
-                                width="70px"
-                                height="70px"
-                                style="border-radius: 100%"
-                            />
+                            <a href="https://t.me/damirtag">
+                                <img
+                                    src="https://media.discordapp.net/attachments/1114539269722222652/1126563559069982851/image.png?width=671&height=671"
+                                    alt="telegram-pic"
+                                    width="70px"
+                                    height="50px"
+                                    style="border-radius: 100%"
+                            /></a>
                             <div class="tg-info">
                                 <div class="name">
                                     <div class="tg-name"><h1>Damir</h1></div>
@@ -75,13 +116,13 @@
                     </div>
                 </div>
             </div>
-            <div class="techs">
+            <div class="techs" id="techs">
                 <div class="relative w-full" style="position: relative">
                     <div
                         class="ml-auto w-24 h-24 rounded-lg shadow-xl shadow-green-800/20 bg-gradient-to-bl from-emerald-600 to-green-800"
                     ></div>
-                    <h1 class="lang heading-text absolute bottom-5 right-5 text-3xl text-white font-bold text-center" key="techs">
-                        Технологии которые я использую
+                    <h1 class="lang heading-text absolute bottom-5 right-5 text-3xl text-white font-bold text-right" key="techs">
+                        Технологии, которые я использую
                     </h1>
                 </div>
                 <div class="techs-inner">
@@ -112,6 +153,11 @@
                             class="bg-[#080808] hover:-translate-y-[3px] hover:bg-[#101010] transition-all duration-200 rounded-lg p-2 px-3 flex items-center justify-between"
                         >
                             <img loading="lazy" src="./assets/html.svg" class="h-6 w-6" /> HTML
+                        </div>
+                        <div
+                            class="bg-[#080808] hover:-translate-y-[3px] hover:bg-[#101010] transition-all duration-200 rounded-lg p-2 px-3 flex items-center justify-between"
+                        >
+                            <img loading="lazy" src="./assets/tailwind.svg" class="h-6 w-6" /> TailwindCSS
                         </div>
                         <div
                             class="bg-[#080808] hover:-translate-y-[3px] hover:bg-[#101010] transition-all duration-200 rounded-lg p-2 px-3 flex items-center justify-between"
@@ -153,12 +199,12 @@
                     </div>
                     <div class="relative w-full" style="position: relative">
                         <div
-                            class="ml-auto w-24 h-24 rounded-lg shadow-xl shadow-green-800/20 bg-gradient-to-bl from-emerald-600 to-green-800 to-gray"
+                            class="ml-auto w-24 h-24 rounded-lg shadow-xl shadow-yellow-400/70 bg-gradient-to-bl from-yellow-500 to-#adab27 to-yellow-500"
                             style="margin-left: 0"
                         ></div>
                         <h1
-                            class="lang design heading-text absolute bottom-5 right-5 text-3xl text-white font-bold text-center"
-                            style="left: 0; right: auto"
+                            class="lang design heading-text absolute bottom-5 left-5 text-3xl text-white font-bold text-center"
+                            style="right: auto"
                             key="design"
                         >
                             Дизайн
@@ -183,17 +229,76 @@
                     </div>
                 </div>
             </div>
-            <!-- portfolio start -->
-            <!-- <div class="portfolio">
-                <div class="port-inner"></div>
-            </div> -->
-            <!-- portfolio end -->
         </div>
-        <div class="footer">
+        <!-- portfolio start -->
+        <div class="wrapper" id="wrapper">
+            <div class="port-inner" id="portfolio">
+                <h1 class="heading-text text-2xl text-white font-bold text-center">Портфолио</h1>
+                <!-- Slider main container -->
+                <div class="mt-6">
+                    <div class="swiper mySwiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="https://drive.google.com/uc?export=view&id=15TswvJqPy1RdnT_KZX5jXoNfuPN_FFXh" alt="" />
+                                <h1 class="heading-text text-white text-left text-1xl font-semibold">
+                                    Рекламный сайт для магазина украшений
+                                </h1>
+                                <button class="text-blue-400 text-lg font-normal" onclick="displayText1()">См. подробнее</button>
+                                <div class="text-sm font-mono hidden" id="hiddshow1">
+                                    Одностраничный продающий себя сайт, с формами обратной связи на почту, авторский дизайн. Полная
+                                    адаптация под все экраны.
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="https://drive.google.com/uc?export=view&id=1NVMXSqxLgSU6d6TybGr-hcta8IrbzoLn" alt="" />
+                                <h1 class="heading-text text-white text-left text-1xl font-semibold">
+                                    Лендинг для школы английcкого языка.
+                                </h1>
+                                <button class="text-blue-400 text-lg font-normal" onclick="displayText2()">См. подробнее</button>
+                                <div class="text-sm font-mono hidden" id="hiddshow2">
+                                    Лендинг был сделан на заказ, использовались такие технологии как JS, jQuery, HTML, SCSS/SASS. В процессе
+                                    работы применял навыки CEO-оптимизации. Присутствует форма обратной связи wa.me. Полная адаптация под
+                                    все экраны.
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://drive.google.com/uc?export=view&id=1_mxRepGncfly1_t-2B89ke9zhyTnsfr6" alt="" />
+                                <h1 class="heading-text text-white text-left text-1xl font-semibold">Веб-приложение для друзей</h1>
+                                <button class="text-blue-400 text-lg font-normal" onclick="displayText3()">См. подробнее</button>
+                                <div class="text-sm font-mono hidden" id="hiddshow3">
+                                    Веб-приложение на основе PHP8, AJAX, MySQL. Мой пэт-проект для друзей с их цитатами и аудио-цитатами,
+                                    фотками с сортировкой по дате, своей базой данных, полностью адаптирован. Имеет функцию "поделиться
+                                    цитатой", тоесть присутствуют ссылки на каждую цитату. Авторский дизайн. Проект постоянно дорабатывается
+                                    и доступен на
+                                    <a class="font-semibold text-yellow-500" href="https://github.com/damirTAG/Aksay-Squad-v2">гитхаб</a>.
+                                    На данный момент я начал работу по созданию своего API для данного проекта. В будущем реализуется
+                                    логин-система, доработается бд, а также база данных с медиа(фото и видео по дате)
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination bg-[#1e1f22]"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="text-black swiper-button-prev"></div>
+                        <div class="text-black swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- portfolio end -->
+        <div class="footer flex-wrap items-center">
             <h1 class="ipadress">Your IP Adress: <span id="gfg"></span></h1>
-            <div class="tr-lang">
-                <img src="./assets/ru.svg" class="translate mrgn-r" id="en-gb" width="30px" height="30px" />
-                <img src="./assets/us.svg" class="translate" id="zh-tw" width="30px" height="30px" />
+            <h1 class="heading-text text-1xl text-white font-bold">Super-powered by Damir&copy;</h1>
+            <div class="tr-lang flex">
+                <h1 class="text-1xl text-white font-thin">Developed with</h1>
+                <img src="./assets/red-heart-icon.svg" class="mr-2 translate" width="30px" height="30px" />
             </div>
         </div>
         <!-- scripts and cdn -->
@@ -201,16 +306,42 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script>
+            function displayText2() {
+                var text = document.getElementById("hiddshow2");
+                if (text.style.display === "none") {
+                    text.style.display = "block";
+                } else {
+                    text.style.display = "none";
+                }
+            }
+        </script>
+        <script>
+            function displayText3() {
+                var text = document.getElementById("hiddshow3");
+                if (text.style.display === "none") {
+                    text.style.display = "block";
+                } else {
+                    text.style.display = "none";
+                }
+            }
+        </script>
+        <script>
             document.onreadystatechange = function () {
                 if (document.readyState !== "complete") {
                     document.querySelector("body").style.visibility = "hidden";
+                    document.querySelector("body").style.width = "100%";
+                    document.querySelector("body").style.height = "100vh";
+                    document.querySelector("#wrapper").style.display = "none";
                     document.querySelector("#loader").style.visibility = "visible";
                 } else {
                     document.querySelector("#loader").style.display = "none";
                     document.querySelector("body").style.visibility = "visible";
+                    document.querySelector("#wrapper").style.visibility = "visible";
+                    document.querySelector("#wrapper").style.display = "block";
                 }
             };
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script src="./engine/App.js"></script>
     </body>
 </html>

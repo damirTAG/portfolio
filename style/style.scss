@@ -11,6 +11,7 @@ https://github.com/damirtag/portfolio
 //Ysabeau Infant enf font
 $bg-c: #1e1f22;
 body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
@@ -165,7 +166,6 @@ var {
 }
 .container {
     width: 800px;
-
     margin: 0px auto;
 }
 //loader
@@ -225,13 +225,26 @@ var {
 }
 
 //loader end
+//video bg start
+.ytplayer-container {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+#video-bg {
+    position: relative;
+    background: transparent;
+    min-width: 100%;
+    min-height: 100%;
+}
+//video bg end
 /*settings end*/
 .wrapper {
     width: 800px;
     margin: 0 auto;
     font-family: Ysabeau Infant, sans-serif !important;
     font-weight: bold;
-    background-color: #313338;
+    background-color: #2a2a2b;
     border-radius: 20px;
     padding: 20px;
     margin-top: 20px;
@@ -271,7 +284,7 @@ var {
     padding: 20px;
     justify-content: space-between;
     display: flex;
-    background-color: #313338;
+    background-color: #2a2a2b;
 }
 //status
 .status-inner {
@@ -373,7 +386,7 @@ var {
     --tw-shadow: var(--tw-shadow-colored);
 }
 .shadow-xl {
-    --tw-shadow: 0 20px 25px -5px rgb(0 0 0/0.1), 0 8px 10px -6px rgb(0 0 0/0.1);
+    // --tw-shadow: 0 20px 25px -5px rgb(0 0 0/0.1), 0 8px 10px -6px rgb(0 0 0/0.1);
     --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
 }
@@ -446,7 +459,7 @@ var {
 }
 //portfolio
 .portfolio {
-    background-color: #313338;
+    background-color: #2a2a2b;
     border-radius: 20px;
     padding: 20px;
 }
@@ -457,7 +470,7 @@ var {
     margin: 0 auto;
     font-family: Ysabeau Infant, sans-serif !important;
     font-weight: bold;
-    background-color: #313338;
+    background-color: #2a2a2b;
     border-radius: 20px;
     padding: 20px;
     margin-top: 20px;
