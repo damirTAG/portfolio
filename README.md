@@ -1,2 +1,1 @@
-# damirTAG's Web Developer Portfolio
-
+# damirTAG Web Developer
