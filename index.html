@@ -16,12 +16,32 @@
         <title>damirTAG - Web Developer</title>
     </head>
     <body class="">
-        <div id="loader" class="race-by center"></div>
+        <style>
+            ::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                border-radius: 10px;
+                background-color: #1e1f22;
+            }
+
+            ::-webkit-scrollbar {
+                width: 12px;
+                background-color: #1e1f22;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                background-color: #555;
+            }
+        </style>
+        <div class="fixed w-full h-full bg-[#1e1f22] z-50 load-page" id="loadPage">
+            <div id="loader" class="race-by center"></div>
+        </div>
         <header class="w-full header">
             <div class="container">
                 <div class="header-inner">
                     <div class="head-links">
-                        <h1 class="text-3xl text-white font-bold rus lang" key="me">Я — Веб Разработчик</h1>
+                        <h1 class="text-xl text-white font-bold rus lang" key="me">Я — Веб Разработчик</h1>
                         <div class="links flex">
                             <a href="https://github.com/damirtag" target="_blank"
                                 ><ion-icon class="text-3xl" name="logo-github"></ion-icon
@@ -34,7 +54,7 @@
                             ></a>
                         </div>
                     </div>
-                    <h1 class="text-3xl text-white font-bold lang" key="devfor">Разработаю сайт для Вас</h1>
+                    <h1 class="text-xl text-white font-bold lang" key="devfor">Разработаю сайт для Вас</h1>
                 </div>
             </div>
         </header>
@@ -42,7 +62,7 @@
         <div class="min-[821px]:mx-10 wrapper" id="wrapper">
             <div class="flex flex-wrap about-in">
                 <div class="relative w-full" style="position: relative">
-                    <div class="mr-auto w-24 h-24 rounded-lg shadow-xl shadow-red-800/20 bg-gradient-to-bl from-red-600 to-red-800"></div>
+                    <div class="mr-auto w-full h-24 rounded-lg shadow-xl shadow-red-800/20 bg-gradient-to-bl from-red-600 to-red-800"></div>
                     <h1
                         class="lang heading-text absolute bottom-5 left-5 text-3xl text-white font-bold text-left"
                         style="text-shadow: #1e1f22 -2px 2px 0, #1e1f22 -4px 3px 0"
@@ -54,15 +74,17 @@
                             <div
                                 class="absolute bottom-[100%] right-1 scrollto-text text-[23px] font-thin"
                                 style="font-family: K2D, sans-serif"
-                            >
-                                scroll
-                            </div>
-                            <img class="w-14 h-14" src="./assets/reshot-icon-down-arrow-VUE5WQFCX2.svg" alt="" />
+                            ></div>
+                            <img
+                                class="w-20 h-16 rounded-lg shadow-2xl shadow-gray-500"
+                                src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif"
+                                alt=""
+                            />
                         </a>
                     </div>
                 </div>
                 <div class="text">
-                    <p class="text-[19px]">
+                    <p class="text-[19px] mt-4">
                         Меня зовут Дамир, мне 17 лет, живу в Алмате. Занимаюсь разработкой сайтов уже 2 года. Параллельно изучаю дизайн и
                         маркетинг. Помогу вам начиная от создания продаваемых лендингов с адаптации под все экраны, заканчивая
                         многостраничными сайтами с CMS-кой и админ панелью.
@@ -71,7 +93,7 @@
             </div>
         </div>
 
-        <div class="wrapper" id="wrapper">
+        <div class="wrapper" id="wrapperStatus">
             <div class="status">
                 <div class="flex md:max-2xl:flex flex-row min-[821px]:flex-row max-[1536px]:flex-col status-inner">
                     <div class="vscode-status">
@@ -119,7 +141,7 @@
             <div class="techs" id="techs">
                 <div class="relative w-full" style="position: relative">
                     <div
-                        class="ml-auto w-24 h-24 rounded-lg shadow-xl shadow-green-800/20 bg-gradient-to-bl from-emerald-600 to-green-800"
+                        class="ml-auto w-full h-24 rounded-lg shadow-xl shadow-green-800/20 bg-gradient-to-bl from-emerald-600 to-green-800"
                     ></div>
                     <h1 class="lang heading-text absolute bottom-5 right-5 text-3xl text-white font-bold text-right" key="techs">
                         Технологии, которые я использую
@@ -130,13 +152,17 @@
                         <div
                             class="bg-[#080808] hover:-translate-y-[3px] hover:bg-[#101010] transition-all duration-200 rounded-lg p-2 px-3 flex items-center justify-between"
                         >
-                            <img loading="lazy" src="./assets/javascript.svg" class="h-6 w-6" /> JavaScript
+                            <img src="./assets/javascript.svg" class="h-6 w-6" /> JavaScript
                         </div>
                         <div
                             class="bg-[#080808] hover:-translate-y-[3px] hover:bg-[#101010] transition-all duration-200 rounded-lg p-2 px-3 flex items-center justify-between"
                         >
-                            <img loading="lazy" src="https://angular.io/assets/images/logos/angular/angular.png" class="h-6 w-6" />
-                            Angular.js
+                            <img
+                                loading="lazy"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                                class="h-6 w-6"
+                            />
+                            React
                         </div>
                         <div
                             class="bg-[#080808] hover:-translate-y-[3px] hover:bg-[#101010] transition-all duration-200 rounded-lg p-2 px-3 flex items-center justify-between"
@@ -199,7 +225,7 @@
                     </div>
                     <div class="relative w-full" style="position: relative">
                         <div
-                            class="ml-auto w-24 h-24 rounded-lg shadow-xl shadow-yellow-400/70 bg-gradient-to-bl from-yellow-500 to-#adab27 to-yellow-500"
+                            class="ml-auto w-full h-24 rounded-lg shadow-xl shadow-yellow-400/70 bg-gradient-to-bl from-yellow-500 to-#adab27 to-yellow-500"
                             style="margin-left: 0"
                         ></div>
                         <h1
@@ -231,40 +257,16 @@
             </div>
         </div>
         <!-- portfolio start -->
-        <div class="wrapper" id="wrapper">
+        <div class="wrapper" id="wrapper2">
             <div class="port-inner" id="portfolio">
-                <h1 class="heading-text text-2xl text-white font-bold text-center">Портфолио</h1>
+                <h1 class="heading-text text-2xl text-white font-bold text-center">Мои проекты</h1>
                 <!-- Slider main container -->
                 <div class="mt-6">
                     <div class="swiper mySwiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">
-                                <img src="https://drive.google.com/uc?export=view&id=15TswvJqPy1RdnT_KZX5jXoNfuPN_FFXh" alt="" />
-                                <h1 class="heading-text text-white text-left text-1xl font-semibold">
-                                    Рекламный сайт для магазина украшений
-                                </h1>
-                                <button class="text-blue-400 text-lg font-normal" onclick="displayText1()">См. подробнее</button>
-                                <div class="text-sm font-mono hidden" id="hiddshow1">
-                                    Одностраничный продающий себя сайт, с формами обратной связи на почту, авторский дизайн. Полная
-                                    адаптация под все экраны.
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="https://drive.google.com/uc?export=view&id=1NVMXSqxLgSU6d6TybGr-hcta8IrbzoLn" alt="" />
-                                <h1 class="heading-text text-white text-left text-1xl font-semibold">
-                                    Лендинг для школы английcкого языка.
-                                </h1>
-                                <button class="text-blue-400 text-lg font-normal" onclick="displayText2()">См. подробнее</button>
-                                <div class="text-sm font-mono hidden" id="hiddshow2">
-                                    Лендинг был сделан на заказ, использовались такие технологии как JS, jQuery, HTML, SCSS/SASS. В процессе
-                                    работы применял навыки CEO-оптимизации. Присутствует форма обратной связи wa.me. Полная адаптация под
-                                    все экраны.
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" lazy="true">
                                 <img src="https://drive.google.com/uc?export=view&id=1_mxRepGncfly1_t-2B89ke9zhyTnsfr6" alt="" />
                                 <h1 class="heading-text text-white text-left text-1xl font-semibold">Веб-приложение для друзей</h1>
                                 <button class="text-blue-400 text-lg font-normal" onclick="displayText3()">См. подробнее</button>
@@ -278,13 +280,46 @@
                                     логин-система, доработается бд, а также база данных с медиа(фото и видео по дате)
                                 </div>
                             </div>
+                            <div class="swiper-slide" lazy="true">
+                                <img src="https://drive.google.com/uc?export=view&id=15TswvJqPy1RdnT_KZX5jXoNfuPN_FFXh" alt="" />
+                                <h1 class="heading-text text-white text-left text-1xl font-semibold">
+                                    Рекламный сайт для магазина украшений
+                                </h1>
+                                <button class="text-blue-400 text-lg font-normal" onclick="displayText1()">См. подробнее</button>
+                                <div class="text-sm font-mono hidden" id="hiddshow1">
+                                    Одностраничный продающий себя сайт, с формами обратной связи на почту, авторский дизайн. Полная
+                                    адаптация под все экраны.
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide" lazy="true">
+                                <img src="https://drive.google.com/uc?export=view&id=1NVMXSqxLgSU6d6TybGr-hcta8IrbzoLn" alt="" />
+                                <h1 class="heading-text text-white text-left text-1xl font-semibold">
+                                    Лендинг для школы английcкого языка.
+                                </h1>
+                                <button class="text-blue-400 text-lg font-normal" onclick="displayText2()">См. подробнее</button>
+                                <div class="text-sm font-mono hidden" id="hiddshow2">
+                                    Лендинг был сделан на заказ, использовались такие технологии как JS, jQuery, HTML, SCSS/SASS. В процессе
+                                    работы применял навыки CEO-оптимизации. Присутствует форма обратной связи wa.me. Полная адаптация под
+                                    все экраны.
+                                </div>
+                            </div>
                         </div>
                         <!-- If we need pagination -->
-                        <div class="swiper-pagination bg-[#1e1f22]"></div>
+                        <!-- <div class="swiper-pagination bg-[#1e1f22]"></div> -->
 
                         <!-- If we need navigation buttons -->
-                        <div class="text-black swiper-button-prev"></div>
-                        <div class="text-black swiper-button-next"></div>
+                        <!-- <div class="text-black swiper-button-prev"></div>
+                        <div class="text-black swiper-button-next"></div> -->
+                        <!-- autoplay-progress -->
+                        <div class="relative">
+                            <div class="autoplay-progress">
+                                <svg viewBox="0 0 48 48">
+                                    <circle cx="24" cy="24" r="20"></circle>
+                                </svg>
+                                <span></span>
+                            </div>
+                        </div>
 
                         <!-- If we need scrollbar -->
                         <!-- <div class="swiper-scrollbar"></div> -->
@@ -293,18 +328,81 @@
             </div>
         </div>
         <!-- portfolio end -->
+        <div class="form wrapper">
+            <h1>Связь со мной</h1>
+            <form class="flex" action="https://formsubmit.co/8b33eca9175fd2ddb1c8130375e39149" method="post">
+                <div class="df-left w-full">
+                    <div class="flex flex-row relative max-sm:flex-wrap">
+                        <div class="flex flex-col w-full">
+                            <input
+                                class="p-2 mt-2 rounded-lg text-white bg-[#2c2e34]"
+                                type="text"
+                                name="name"
+                                placeholder="Ваше Имя"
+                                id="name"
+                                required
+                            />
+                            <input
+                                class="p-2 mt-2 rounded-lg text-white bg-[#2c2e34]"
+                                data-phone-pattern
+                                type="phone"
+                                name="phone"
+                                placeholder="Ваш Телефон"
+                                id="phone"
+                                required
+                            />
+                        </div>
+                        <textarea
+                            class="p-2 rounded-lg text-white w-full mt-2 ml-2 bg-[#2c2e34] max-sm:ml-0"
+                            type="text"
+                            name="message"
+                            placeholder="Сообщение (Не обязательно)"
+                            wrap="hard"
+                            maxlength="2000"
+                            rows="2"
+                        ></textarea>
+                    </div>
+                    <div class="relative mt-3">
+                        <div
+                            class="bg-button w-24 h-12 rounded-lg shadow-xl shadow-black-400/70 bg-gradient-to-bl from-black-500 to-#adab27 to-black-500"
+                        ></div>
+
+                        <button
+                            class="p-2 rounded-lg bg-[#1e1f22] hover:opacity-75 transition-all duration-300 absolute bottom-1"
+                            type="submit"
+                            style="margin-left: 2.7px"
+                        >
+                            Отправить
+                        </button>
+                    </div>
+                </div>
+                <!-- hidden elem -->
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_autoresponse" value="Благодарим вас, ваша заявка была принята! Ожидайте ответа." />
+                <input type="hidden" name="_subject" value="New submission!" />
+            </form>
+        </div>
         <div class="footer flex-wrap items-center">
             <h1 class="ipadress">Your IP Adress: <span id="gfg"></span></h1>
             <h1 class="heading-text text-1xl text-white font-bold">Super-powered by Damir&copy;</h1>
             <div class="tr-lang flex">
                 <h1 class="text-1xl text-white font-thin">Developed with</h1>
-                <img src="./assets/red-heart-icon.svg" class="mr-2 translate" width="30px" height="30px" />
+                <img src="./assets/red-heart-icon.svg" class="mr-2 animate-[beat_.25s_infinite_alternate]" width="30px" height="30px" />
             </div>
+            <!-- beat anime -->
+            <style>
+                @keyframes beat {
+                    to {
+                        transform: scale(1.1);
+                    }
+                }
+            </style>
         </div>
         <!-- scripts and cdn -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- -=============- -->
         <script>
             function displayText2() {
                 var text = document.getElementById("hiddshow2");
@@ -325,22 +423,31 @@
                 }
             }
         </script>
+        <!-- |=============| -->
+        <!-- loader -->
         <script>
             document.onreadystatechange = function () {
                 if (document.readyState !== "complete") {
                     document.querySelector("body").style.visibility = "hidden";
                     document.querySelector("body").style.width = "100%";
-                    document.querySelector("body").style.height = "100vh";
+                    document.querySelector("body").style.height = "100%";
                     document.querySelector("#wrapper").style.display = "none";
+                    document.querySelector("#wrapperStatus").style.display = "none";
+                    document.querySelector("#wrapper2").style.display = "none";
                     document.querySelector("#loader").style.visibility = "visible";
+                    document.querySelector("#loadPage").style.display = "block";
                 } else {
                     document.querySelector("#loader").style.display = "none";
+                    document.querySelector("#loadPage").style.display = "none";
                     document.querySelector("body").style.visibility = "visible";
                     document.querySelector("#wrapper").style.visibility = "visible";
                     document.querySelector("#wrapper").style.display = "block";
+                    document.querySelector("#wrapper2").style.display = "block";
+                    document.querySelector("#wrapperStatus").style.display = "block";
                 }
             };
         </script>
+        <!-- loader end -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script src="./engine/App.js"></script>
     </body>

@@ -279,7 +279,6 @@ var {
 }
 .header-inner h1 {
   font-family: Ysabeau Infant, sans-serif !important;
-  font-size: 25px;
 }
 
 .status-inner {
@@ -323,6 +322,44 @@ var {
 .status-inner .tg-info .nametag a {
   color: #666d77;
   text-decoration: none;
+}
+
+:root {
+  --swiper-theme-color: #fff !important;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: -2px;
+  bottom: 0px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.swiper-pagination {
+  background-color: transparent !important;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
 }
 
 .techs {
